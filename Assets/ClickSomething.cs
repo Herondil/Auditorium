@@ -6,6 +6,9 @@ public class ClickSomething : MonoBehaviour
 {
     private void FixedUpdate()
     {
+
+        //Physics2D.Raycast(transform.position, Vector2.right);
+
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right);
 
         if (hit.collider != null)
@@ -13,6 +16,5 @@ public class ClickSomething : MonoBehaviour
             Debug.Log("Collision");
         }
     }
-
 }
 
